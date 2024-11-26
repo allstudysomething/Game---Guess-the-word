@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<HorizontalAlign>Center</HorizontalAlign>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ЗагадалиНовоеСлово" id="14">
+			<DataPath>ЗагадалиНовоеСлово</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗАГАДАЛИ НОВОЕ СЛОВО</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<ContextMenu name="ЗагадалиНовоеСловоКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="ЗагадалиНовоеСловоРасширеннаяПодсказка" id="16"/>
+		</LabelField>
+		<UsualGroup name="ГруппаБукв" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа букв</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа букв</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаБуквРасширеннаяПодсказка" id="27"/>
+		</UsualGroup>
+		<LabelField name="БуквыИзСлова" id="104">
+			<DataPath>БуквыИзСлова</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БУКВЫ</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="БуквыИзСловаКонтекстноеМеню" id="105"/>
+			<ExtendedTooltip name="БуквыИзСловаРасширеннаяПодсказка" id="106"/>
+		</LabelField>
+		<InputField name="ВведитеСловоИлиБукву" id="7">
+			<DataPath>ВведитеСловоИлиБукву</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВВЕДИТЕ СЛОВО ИЛИ БУКВУ</v8:content>
+				</v8:item>
+			</Title>
+			<Width>20</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВведитеСловоИлиБуквуКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВведитеСловоИлиБуквуРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Button name="ПРОВЕРИТЬ" id="12">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПРОВЕРИТЬ</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРОВЕРИТЬ</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПРОВЕРИТЬРасширеннаяПодсказка" id="13"/>
+		</Button>
+		<Button name="ВывестиМассивБукв" id="140">
+			<Type>UsualButton</Type>
+			<Enabled>false</Enabled>
+			<CommandName>Form.Command.ВывестиМассивБукв</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести загаданное слово (ЧИТ)</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ВывестиМассивБуквРасширеннаяПодсказка" id="141"/>
+		</Button>
+		<Button name="ПоказатьВведенныеБуквы" id="142">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПоказатьВведенныеБуквы</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать введенные буквы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПоказатьВведенныеБуквыРасширеннаяПодсказка" id="143"/>
+		</Button>
+		<LabelField name="СкрытаяСтрока" id="17">
+			<DataPath>СкрытаяСтрока</DataPath>
+			<Enabled>false</Enabled>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<Width>60</Width>
+			<Height>12</Height>
+			<ContextMenu name="СкрытаяСтрокаКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="СкрытаяСтрокаРасширеннаяПодсказка" id="19"/>
+		</LabelField>
+		<LabelField name="СкрытаяСтрока1" id="20">
+			<DataPath>СкрытаяСтрока</DataPath>
+			<Visible>false</Visible>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="СкрытаяСтрока1КонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="СкрытаяСтрока1РасширеннаяПодсказка" id="22"/>
+		</LabelField>
+		<LabelField name="СкрытаяСтрока2" id="23">
+			<DataPath>СкрытаяСтрока</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="СкрытаяСтрока2КонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="СкрытаяСтрока2РасширеннаяПодсказка" id="25"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УГАДАЙ_СЛОВО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВведитеСловоИлиБукву" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Введите слово или букву</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗагадалиНовоеСлово" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загадали новое слово</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СкрытаяСтрока" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрытая строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БуквыИзСлова" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Буквы из слова</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПРОВЕРИТЬ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРОВЕРИТЬ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРОВЕРИТЬ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Проверить</Action>
+		</Command>
+		<Command name="ВывестиМассивБукв" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести массив букв</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести массив букв</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВывестиМассивБукв</Action>
+		</Command>
+		<Command name="ПоказатьВведенныеБуквы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать введенные буквы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать введенные буквы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьВведенныеБуквы</Action>
+		</Command>
+	</Commands>
+</Form>

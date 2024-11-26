@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
+	<ConfigVersions>
+		<Metadata name="Configuration.ИграУгадайСлово" id="3043a4ec-c620-4d24-b86e-862cea13ec8b" configVersion="3de321efe7519f4bafa3c92952d319f400000000"/>
+		<Metadata name="Configuration.ИграУгадайСлово.ManagedApplicationModule" id="cf3b59be-0c2a-4e54-a5e5-80d7a4a6b69a.6" configVersion="0dda60d2f80e10409fc24bac10ba961400000000"/>
+		<Metadata name="Configuration.ИграУгадайСлово.SessionModule" id="cf3b59be-0c2a-4e54-a5e5-80d7a4a6b69a.7" configVersion="f587ebe55175fb498494a2fa6fb6306c00000000"/>
+		<Metadata name="DataProcessor.УГАДАЙ_СЛОВО" id="4cdc7271-8651-45ea-b683-11657ee373fa" configVersion="1d88cf0cae12914d964e9f749397648b00000000"/>
+		<Metadata name="DataProcessor.УГАДАЙ_СЛОВО.Form.ФормаДокумента" id="1c7d7d71-aa87-471f-adb0-c61c0a74f420" configVersion="07a74b891f5c2042b6230d322dd8647600000000"/>
+		<Metadata name="DataProcessor.УГАДАЙ_СЛОВО.Form.ФормаДокумента.Form" id="1c7d7d71-aa87-471f-adb0-c61c0a74f420.0" configVersion="60bbd682df852b4396f7b4276c6a6f0f00000000"/>
+		<Metadata name="DataProcessor.УГАДАЙ_СЛОВО.Form.ФормаДокумента.Help" id="1c7d7d71-aa87-471f-adb0-c61c0a74f420.1" configVersion="98daaafd0c04184493e4004bb3cf6e7a00000000"/>
+		<Metadata name="Language.Русский" id="aad9071e-2bc3-43c2-ae4c-395f7b8c3f08" configVersion="27f008ec90e4b34ebf6df89201f74d4900000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
