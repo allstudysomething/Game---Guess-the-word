@@ -242,7 +242,7 @@
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>Use</ModalityUseMode>
-			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>UseWithWarnings</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<DatabaseTablespacesUseMode>DontUse</DatabaseTablespacesUseMode>
 			<CompatibilityMode>Version8_3_25</CompatibilityMode>
@@ -250,7 +250,11 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>Окно</Subsystem>
+			<CommonModule>Тест</CommonModule>
+			<Document>ОтгаданноеСлово</Document>
 			<DataProcessor>УГАДАЙ_СЛОВО</DataProcessor>
+			<InformationRegister>РегистрОтгаданныхСлов</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
